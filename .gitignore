@@ -23,6 +23,7 @@ ausarbeitung/ausarbeitung.out
 ausarbeitung/ausarbeitung.run.xml
 ausarbeitung/ausarbeitung.synctex.gz
 ausarbeitung/ausarbeitung.toc
+ausarbeitung/content/*.aux
 ausarbeitung/content/abstract.aux
 ausarbeitung/content/anhang_a.aux
 ausarbeitung/content/kapitel_1_ausarbeitung.aux

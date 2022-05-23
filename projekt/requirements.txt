@@ -1,0 +1,6 @@
+pandas
+autopep8
+tensorflow
+matplotlib
+scikit-learn
+opencv-python

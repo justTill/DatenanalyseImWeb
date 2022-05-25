@@ -4,3 +4,8 @@ tensorflow
 matplotlib
 scikit-learn
 opencv-python
+numpy
+seaborn
+tensorflow_hub
+keras
+PIL

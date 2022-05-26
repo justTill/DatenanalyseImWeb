@@ -38,5 +38,5 @@ ausarbeitung/misc/personal_ausarbeitung.aux
 projekt/env
 projekt/data/posters
 projekt/data/model
-projekt/data/movie-posters
+projekt/data/movie-posters/*
 projekt/data/movies.csv

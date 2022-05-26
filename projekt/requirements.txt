@@ -8,4 +8,4 @@ numpy
 seaborn
 tensorflow_hub
 keras
-PIL
+pillow

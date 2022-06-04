@@ -1,6 +1,7 @@
 BATCH_SIZE = 256 
 EPOCHS = 50 
 LEARNING_RATE = 0.001 
+TRAINABLE = True
 Model: "sequential_38"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   

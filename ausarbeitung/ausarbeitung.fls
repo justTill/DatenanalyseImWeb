@@ -151,8 +151,8 @@ INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/einleitung.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/einleitung.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ergebnisse.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ergebnisse.aux
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.aux
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.aux
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePredictionex.aux
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePredictionex.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ausblick.aux
@@ -258,12 +258,12 @@ INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/einleitung.tex
 OUTPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ergebnisse.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ergebnisse.tex
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ergebnisse.tex
-OUTPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.aux
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.tex
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.tex
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.tex
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.tex
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+OUTPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePredictionex.aux
 OUTPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.tex
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.tex
@@ -307,8 +307,8 @@ INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/einleitung.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/einleitung.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ergebnisse.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ergebnisse.aux
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.aux
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.aux
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePredictionex.aux
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePredictionex.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ausblick.aux
@@ -330,6 +330,8 @@ OUTPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/ausarbeitung.run.xml
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb

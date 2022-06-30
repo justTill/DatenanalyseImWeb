@@ -1,0 +1,118 @@
+\chapter{Pass/Fail Prediction with Moodle}
+
+
+Durch Zugriffsdaten, die von vielen Anwendungen erstellt und gespeichert werden, stehen viele Daten zu verfügung,
+die genutzt werden können um das Lehren und das lernen in einem positiven zu verbessern.
+
+LMS ekrlären ? oder bekannt ?
+
+Das Paper [Quelle] beschäftigt sich mit den zwei Fragen, ob die Daten, die von Moodle Aktivitäten während
+der dauer eines Kurses gessammelt werden aussreichen um vorraussagen zu können, wie gut ein Stundent in diesem Fach abschließt (Welche Note (nach dem Alphabet) und damit auch ob bestanden oder gefailt)
+Die zweite Frage, die versucht wird zu beantworten, beschäftigt sich damit herauszufinden, ob die selben Daten, jedoch 
+nur für den Zeitraum von sechs bzw Zehn wochen aussreichen um herausszufinden ob der Student das Fach bestehen wird oder nicht.
+
+\section*{Datensätze}
+Um die Fragen zu beantworten wurden Daten von 29 verschiedenen Kursen zu 9 verschiedenen modulen zwischen den Jahren 2011 und 2018 ausgewählt.
+Alle Module kommen aus dem Selben Fachbereich und dem selben Dozenten um eine homogene Maßen an Daten anzusammeln.
+Insgesamt konnten so Kursdaten von 690 Studenten (410 waren Indivuell, rest selber Student) gesammelt werden, wobei 83 davon, den Kurs frühzeitig verlassen haben.
+
+Aufgrund des doch Speziellen Datensatzes können die Ergebnisse nur im Context des kleines Stundenten kreises gesehen werden.
+
+
+
+\section{Klassifizierungen}
+Um die Erste Frage zu beanrtworten wurde eine KI entwickelt. Diese KI kann insgesamt 5 verschiedene Vorherssagen treffen.
+"Distinction" (80\%+)
+"Merit" 65\%- 79\%)
+"Pass" (50\% - 64\%)
+"Fail" (1\% bis 49\%)
+"Early Exit"(0\% oder keine Note)
+
+Um die Zweite Frage zu beanrtworten wurden die ersten 3 Klassen zur Klasse "Pass" zusammengefasst und die letzten beiden zu "Fail"
+
+\section{Daten}
+Es wurden nur Zugriffsdaten von Studenten zum Trainieren und Validieren der Ki genommen, die von Dozenten mussten entfernt werden
+Es wurden folgende Zugriffsdaten verwendet: LISTE im PAPER!!!
+
+\section{Algrothmen}
+Genauer Beschreiben ?
+Random Forest:
+Graduent Boosting:
+K nearest Neigbours:
+Linear Discriminat Analysis:
+
+Dies sind verschiedene Algrothmen die benutzt werden können um Daten in Klassen zu Ordnen.
+
+\section{Model Building an Evaluation}
+Data-Split in 70-30
+
+Kappa Statistic gib an wie gut die vom Modell vorausgesagten Klassen mit den richtigen Klassen überinstimen, zur Kontrolle wird ein  
+zu einem Zuflligen Klassifiziere, der anhand der Häufigkeit der vorkommen von Klassen rät um welche Klasse es sich handelt genommen
+0.02 = Fair
+021-040. Moderat
+041-060 Zustimmend
+061-080 wesentiche Zustimmung
+081-10 Perfekte ZUstimmung
+
+no-information Rate = genauigkeit wenn immer die Klasse mit den meisten laben in dem Testset gerraten wird
+
+\section{Ergebnisse}
+Das trainierungd und Testen der Ki hat ergeben, das alle Algorithmen eine sehr ähnliche Genuigkeit haben.
+Die Genaurigkeit liegt bei dem Model zu 95\% in dem Bereich 53\% bis 67\%. Des Weiteren waren Alle
+Algorithmen besser als die no-information Rate. Am besten konnte vorrausgesagt werden, wenn ein Student besonders gut den Kurs besteht oder den Kurs frühzeitig beendet
+Alles andere konnte nicht gut predicted werden.
+
+Wenn anhand von der Zugfiffsdaten für die gesamte Länge des Kurses, konnte, wenn nur festegstellt werden soll
+ob ein Student besteht oder nicht, mithilfe des Random Forest Algrithmus wurde eine Genauigkeit von 92\% erreicht
+(148 von 152 Studenten die bestanden haben und 42 von 54 die nicht bestanden haben konnten korrekt vorhergesagt werden)
+
+\subsection{Ergebnisse mit 6 Wochen Daten und 10 Wochen Daten}
+Wenn die Ki nur mit 6Wochen alten Daten voraussagen treffen soll,
+hat diese nicht besser abgeschnitten als die no-information rate.
+Wurden jedoch 10 Wochen alte Ergebnisse genommen, konnte die deutlich bessere
+vorhersagen treffen als die no-information rate. Auch hier waren alle Algorthmen besser,
+am besten war jedoch dedr Random Forest Algorithmus mit 82.18\%
+
+\section{Korrelation der Variablen}
+
+Pass/Fail all Data:
+Regular: und Assignment Submitted
+
+
+Random Forest /Pass/Fail 10 Weeks
+Regular / Assignment Vies
+Course Views
+pm.Early
+am.late
+
+
+\section{Disskusion}
+Frage 1: Wenn alle Daten benutzt werden ist es möglich die Notesignificant besser zu bestimmen als mit der no-information-rate 
+am besten war dabeider Random Forest mit einer genaurugkeit5 von 60,5. Dies deutet darauf hin, das die Moodle aktivität benutzt werden kann um die Noten vorherzusagen.
+Dabei war die Unterschiedung, ob ein Student sehr gut besteht oder abbricht am besten zu bestimmen, das kann daran liegen, das dort das Nutezrverhalten extrem eindeutig ist.
+Wenn man nur bestimmen möchte ob die Studenten bestehen oder nicht können die Daten sehr gut genutzt werden. Dort hat man eine Genauitgkeit von 92.2\%
+Dieses Ergebnis stimmt auch mit vielen anderen Studien überrein.
+
+Das Gute Ergebniss kann daran liegen, das durch den längeren Zeitraum mehr Datevrohanden waren. Im Gegensatz zu anderen Studien waren hier weniger als 83 Prizenzt der Daten passiv sonst sind das oft über 95 Prozent.
+
+
+
+Frage 2: Für den Kurzen Zeitraume von 6Woche  hat keiner einen Algrotihmen eine Verbesserung gebracht. Mit Daten von 10 Wochen hat die PErfomance etwas verbessert.
+Jedoch auch hier kann nur weniger als die Hälfte der Failing Student vorhergesagt werden. Dies deutet darauf hin, das LMS Zugfiffsdaten hilfereich für ein frühwarnsystem sein können,
+Jedoch werden noch mehr Daten benötigt z. B. eine noch genauere LMS Nutzungdaten oder Assessment results, Studentische Interaktion mit anderen. Dies wurde auch in anderen Studien schon gezeigt, das diese Daten helfen können.
+
+Trotz der hohen false-positiven kann es hilfreich sein so ein frühwarnsystem einzurichten, da dadruch trotzdem einige Studenten erreicht, die dadruch hilfe bekommen können
+und das die Schulen und den Studenten weniger kostet, als wenn diese einfach am ende Durchfallen.
+
+
+Es wurde gezeigt, das das Regulräre Login darauf hnweißt, das ein Student eher besteht. Viele Forscher meinen dies Zeigt darauf, das die Studenten ein besseres Lern/Zeit Managementhaben und dies ein wichtiger Faktor für den erfolg ist.
+
+
+
+Um die Modelle zu verbessern könnten feinere Zugriffsdaten gesammelt werden, sowie Ergebniss von Aufgaben beachtet werden. Dozenten sollten Aufgaben früh ihn ihren Kurs einbauen und die Möglichkeiten von LMS nutzen um Studentische ineraktivität zu fördern.
+
+
+\section{Ergebnis}
+Moodle Data kann benutzt werden um vorherzusagen, wie gut ein Student besteht un ob dieser Besteht. Um dies jedoch Praktisch zu benutzen, währe ein Frühwarnsystem gut, Moodle daten reichen dazu nicht ausreichen aus. 
+Die getestetn Modelle sollten daher mit mehr Daten, genaueren Zugriffsdaten und Aufgaben ergebnisse miteinbezogen werden. 
+Des weitren waren alle Zugriffsdaten nur von Kursen die von einem Doztenten geleitet wurden. Daher ist das ergebnis nicht gut Generalisierbar 

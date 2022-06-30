@@ -55,75 +55,75 @@
 
 \begin{document}
 
-  % Cover
-  \include{misc/cover_ausarbeitung}
+% Cover
+\include{misc/cover_ausarbeitung}
 
-  % Seitenzahlen röm.
-  \pagenumbering{roman}
+% Seitenzahlen röm.
+\pagenumbering{roman}
 
-  % Eidesstattliche Erklärung
+% Eidesstattliche Erklärung
 \include{misc/eidesstattliche_erklaerung}
 
 
-  % Abstract
-  \include{content/abstract}
+% Abstract
+\include{content/abstract}
 
-  % Inhaltsverzeichnis
+% Inhaltsverzeichnis
 
-  \pagestyle{plain}
-  \tableofcontents
+\pagestyle{plain}
+\tableofcontents
 
-  % Abbildungsverzeichnis
-  \listoffigures
+% Abbildungsverzeichnis
+\listoffigures
 
-  % Tabellenverzeichnis
-  \listoftables
+% Tabellenverzeichnis
+\listoftables
 
-  % Abkürzungsverzeichnis
-  \newpage
-  \input{misc/acronyms}
+% Abkürzungsverzeichnis
+\newpage
+\input{misc/acronyms}
 
-  \newpage
+\newpage
 
-  % Seitenzahlen arab.
-  \pagenumbering{arabic}
-  \pagestyle{fancy}
-  
-  \fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+% Seitenzahlen arab.
+\pagenumbering{arabic}
+\pagestyle{fancy}
 
-  %Kopfzeile links
-  \fancyhead[RE]{\nouppercase\leftmark \\ \nouppercase\rightmark}
+\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
 
-  %Kopfzeile rechts
-  \fancyhead[LO]{\nouppercase\leftmark \\ \nouppercase\rightmark}
+%Kopfzeile links
+\fancyhead[RE]{\nouppercase\leftmark \\ \nouppercase\rightmark}
 
-  \fancyfoot[C]{\thepage}
+%Kopfzeile rechts
+\fancyhead[LO]{\nouppercase\leftmark \\ \nouppercase\rightmark}
 
- \include{content/einleitung}
- \include{content/ergebnisse}
- \include{content/moodlePredictionex}
- \include{content/fazit}
- \include{content/ausblick}
+\fancyfoot[C]{\thepage}
+
+\include{content/einleitung}
+\include{content/ergebnisse}
+\include{content/moodlePrediction}
+\include{content/fazit}
+\include{content/ausblick}
 
 
-  % Kapitel 1 -- Einleitung
-  \include{content/kapitel_1_ausarbeitung}
+% Kapitel 1 -- Einleitung
+\include{content/kapitel_1_ausarbeitung}
 
-  % Kapitel 2 -- Stile
-  \include{content/kapitel_2}
+% Kapitel 2 -- Stile
+\include{content/kapitel_2}
 
-  % Kapitel 3 -- Tooling
-  \include{content/kapitel_3}
-  
-    % Kapitel 4 -- Infrastruktur
-  \include{content/kapitel_4}
-  
-  \appendix
+% Kapitel 3 -- Tooling
+\include{content/kapitel_3}
 
-  % Anhang A
-  \include{content/anhang_a}
+% Kapitel 4 -- Infrastruktur
+\include{content/kapitel_4}
 
-    % Literaturverzeichnis
-  \printbibliography
+\appendix
+
+% Anhang A
+\include{content/anhang_a}
+
+% Literaturverzeichnis
+\printbibliography
 
 \end{document}

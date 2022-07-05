@@ -1,16 +1,88 @@
+Viele Systeme erzeugen während sie benutzt werden Daten, auch genannt Zugriffsdaten.
+Diese Daten werden gespeichert und genutzt um Informationen über die Benutzer zu gelangen. 
+Solche Informationen können benutzt werden um neue Produkte zu erschaffen oder zu verbessern.
+Zurgiffsdaten werden auch von Systemen, die in der Bildung eingesetzt werden gesammelt z. B Lernmanagementsysteme - oder auch virtuelle Lernumgebungen oder Kursmanagemensysteme genannt - wie Moodle.
+Die Aufgabe von Bildungsintitutionen ist es, die Daten zu Nutzen, um das Lehren und lernen zu verbessern.
+
+Rory Quin und Professor Geraldine Gray arbeiten an der \glqq Technological University Dublin\grqq{} im Fachbereich für \glqq Informatics and Engineering
+PhD \grqq{}. Sie haben sich zur Aufgabe gemacht zu überprüfen, ob es möglich ist mit Zugriffsdaten des Lernmanagementsystems Moodle die an einer Hochschule gesammelt wurden,
+vorhersagen über die Zukünftigen Laufbahn eines Studentens innerhalb eines Kurses. Sie versuchen folgende zwei Fragen mit ihrere Forschung zu beantworten. Sie haben zu diesem thema ein Paper veröffentliche welches 14 mal (laut research gate) citiert wurde.
+Diese Art von Überpfüung wurde schon häufiger gemacht jedoch immer nur an Universiäten und nicht an Hochschulen, daher haben sie es nochmal gemacht.
+\begin{enumerate}
+    \item Ist es möglich mit Aktivitätsdaten von Moodle, die während der dauer eines Kurses gesammelt werden vorherzusagen, wie gut ein Student in dem Kurs abschneidet und damit auch ob dieser den Kurs besteht oder durchfällt.
+    \item Ist es möglich mit den selben Daten jedoch nur von den ersten sechs bzw. zehn Wochen vorherzusagen ob ein Student den Kurs bestehen oder durchfallen wird.
+\end{enumerate}
+Besonders wichtig ist die zweite Frage, da es für Dozenten wichtig sein kann GRUND AUSFÜRHLICHER
 
 
-Durch Zugriffsdaten, die von vielen Anwendungen erstellt und gespeichert werden, stehen viele Daten zu verfügung,
-die genutzt werden können um das Lehren und das lernen in einem positiven zu verbessern.
+\subsection{Vorgehen}
+Um die Fragen zu beantworten werden Daten von insgesamt 29 Kursen von 9 verschiedenen Modulen im selben Fachbereich und unter der Leitung eines Dozentens genommen.
+Die Kurse fanden zwischen den Jahren 2011 und 2018 statt. Die Kurse hatten unterschiedlich lange Laufzeiten, der Kürzetes Kurs hat eine länge von 11 Wochen und der längste 33 Wochen.
+Insgesamt konnten so Daten von 690 Kursteilnehmern. Die 690 Kursteilnehmer setzten sich aus insgesamt 410 Studierenden zusammen. 
+\\
+Es werden folgende Zugriffsdaten verwendet, um vorhersagen zu treffen.
+LISTE VON ZUGRIFFSDATEN /BILDER 
+\\
+\noindent
+Die erste Klassifizierungsaufgabe besteht darin den Notenbereich der Studierenden hervorzusagen und damit ob diese den Kurs bestehen oder durchfallen. Es gibt folgende Klassen.
+\begin{enumerate}
+    \item Early Exit (Abbruch)
+    \item Fail (Durchgefallen)
+    \item Pass (Bestanden mit 50\% bis 64\%)
+    \item Merit (Bestanden mit 65\% bis 79\%)
+    \item Distinction (Bestanden mit 80\% bis 100\%)
+\end{enumerate}
+Um die zweite Frage zu beantworten wurden die ersten beiden Klassen (Early Exit und Fail) sowie die anderen drei Klassen zusammengefasst, so das es nur die Klassen Bestanden oder Durchgefallen gab.
+\\
+\noindent
+\\
+\noindent
+Es werden verschiedene Algorithmen getestet um die bestmögliche vorhersagen zu treffen. Insgesamt werden 4 verschiedenen Algotihmen ausgewählt. Der Random Forest, Gradient Boosting, k Nearest
+Neighbours und Linear Discriminant Analysis. Alle Algorithmen haben in anderen Forschungen bereits gute Ergebnisse erzielt. Jeder der Algrotihmen wurde mit 70\% der Daten trainiert.
+Die restlichen 30\% wurden benutzt um die Genauigkeit zu überprüfen. Die Genauigkeit wird außerdem mit der\glqq no-information rate\grqq{} verglichen.
+Diese gibt die Genauigkeit an, wenn immer die am häufigsten vorkommende Klasse vorhergesagt wird. 
 
-LMS ekrlären ? oder bekannt ?
+\subsection{Ergebnis}
+\subsubsection{Frage 1}
+Das Trainieren und Testen mit allen Daten hat ergeben, das alle Algorithmen einen ähnliche Genauigkeit haben, wenn es darum geht den Notenbreich vorherzusagen.
+Sie unterscheiden sich nur in wenigen Prozentpunkten. Der Random Forest Algorihmus hat mit 60,5\% Genauigkeit am besten vorhersagen getroffen.
+Wenn es nur darum geht vorherzusagen ob ein Student den Kurs besteht oder durchfällt wurde eine Genauigkeit von 92.2\% mithilfe des Random Forest Algorihmuses erreicht. 
+Auch hier hat dieser Algorihmus am besten abgeschnitten. Mit den 92,2\% ist der Algorihmus Signifikant besser als die \glqq no information rate\grqq{}. 
+Diese liegt aufgrund der Tatsache, das es mehr Studierende gab die Kurse bestanden haben, als die die nicht bestanden haben bei 73.5\%. 
+\\ \noindent
+Der Random Forest Algorihmus konnte insgesammt 121 von 152 Studierende die den Kurs bestanden haben richtig hervorsagen und 42 von 54 Studierende die den Kurs nicht bestanden haben.
 
-Das Paper [Quelle] beschäftigt sich mit den zwei Fragen, ob die Daten, die von Moodle Aktivitäten während
-der dauer eines Kurses gessammelt werden aussreichen um vorraussagen zu können, wie gut ein Stundent in diesem Fach abschließt (Welche Note (nach dem Alphabet) und damit auch ob bestanden oder gefailt)
-Die zweite Frage, die versucht wird zu beantworten, beschäftigt sich damit herauszufinden, ob die selben Daten, jedoch 
-nur für den Zeitraum von sechs bzw Zehn wochen aussreichen um herausszufinden ob der Student das Fach bestehen wird oder nicht.
+\subsubsection{Frage 2}
+Das Trainieren und Testen mit Daten von sechs Wochen hat ergeben, dass kein Algorihmus bessere voraussagen treffen konnte als wenn man die \glqq no information rate\grqq{} benutzt hat,
+die bei 75,5\% lag. Die unterschiedliche \glqq no information rate\grqq{}, setzt sich daraus zusammen, dass noch nicht alle Studierenden innerhalb der ersten 6 Wochen des Kurses Moodle benutzt haben.
+\\ \noindent \\ \noindent
+Wurden hingegen die Daten der ersten zehn Wochen benutzt konnte eine Signifikante verbesserung gegenüber der \glqq no information rate\grqq{} erreicht werden. 
+Auch hier hat der Random Forest Algorithmus am besten abgeschnitten. Er erreichte eine Genauigkeit von 82.18\% wenn es darum ging zu bestimmen ob studierende den Kurs bestehn oder nict.
+Die \glqq no information rate\grqq{} liegt bei 74.8\%
+\\ \noindent \\ \noindent
+\\ \noindent \\ \noindent
+Am meisten einfluss auf die Ergebnisse wenn alle Daten oder die der ersten 10 Wochen benutzt wurden, hatte die Anzahl an Tagen an denen sich die Studierenden in den Kurs eingeloggt haben.
+Das Bedeutet je öfter sich die Studierenden an Tagen eingeloggt haben desto eher haben sie den Kurs bestanden und gut abgeschnitten.
 
-\section*{Datensätze}
+\subsection{Fazit}
+Die Testergebnisse haben gezeigt, das es möglich ist mihilfe von Zugriffsdaten die von Moodle im laufe eines Kurses gesammelt werden Signifikant bessere vorhersagen über die Noten der Studierenden zu treffen als mit der \glqq no-information rate\grqq{}.
+Dabei haben alle Algorithmen gut abgeschlossen und sich nur innerhalb von maximal fünf Prozentpunkten unterschieden. Der Random Forest Algorithmus hat dabei mit 60.5\% am besten abgeschlossen. 
+Wenn es darum ging zu bestimmen ob ein Studierender den Kurs besteht oder Durchfällt erreichter der Random Forest Algorihmus eine Genauigkeit von 97\% voherzusagen, wenn ein Studierender den Kurs besteht und 78\% aller Studierende die nicht bestehen voherzusagen.
+\\ \noindent \\ \noindent
+Es Reicht jedoch nicht aus am Ende eines Kurses voherzusagen zu können ob ein Studierender den Kurs besteht oder nicht.
+Ein frühzeitiger Hinweise welche Studierenden möglicherweise nicht bestehen ,wäre für die Lehrenden Hilfreich, da sie so Hilfe leisten können.
+Das Testergebnis hat gezeigt, das es nicht möglich war nach sechs Wochen festzustellen welche Studierenden möglicher weise Durchfallen. 
+Mit den gesammelten Daten von zehn Wochen konnte jedoch eine Signifikant bessere Vorhersage getroffen werden als mit der \glqq no-information rate\grqq{}.
+Trotzdem konnten nur weniger als die Häflte der Studierenden ermittelt werden, die Durchfallen. Dies deutet darauf hin, das die Zugriffsdaten von Moodle hilfreich für ein Frühwarnsystem sein können,
+es jedoch besser wäre wenn noch mehr Daten zu verfügung ständen. Man könnte noch feiner Zugriffsdaten, Ergebnise von Zwischenabgaben, oder Anzahl an Interaktionen mit anderen Studierenden einzubeziehen.
+\\ \noindent \\ \noindent
+Das der Reguläre Login so eine hohe relevanz hat ob ein Studierender besteht oder nicht zeigt darauf hin dass diese Student ein besseres Lern und Zeit Management haben. DIes ist ein wichtiger Faktor für den Erfolg.
+\\ \noindent \\ \noindent
+Abschließend kann also gesagt werden die Zugriffsdaten von Moodle können benutzt werden um ein Frühwarnsystem zu erstellen. Mehr und feiner Daten wären jedoch noch Hilffreicher.
+Die Ergebnisse dieser Studie sollten jedoch noch mit einer Größeren Datenmenge wiederholt werden um die Ergebnisse zu bestätigen
+
+\begin{comment}
+\section{Notizen}
 Um die Fragen zu beantworten wurden Daten von 29 verschiedenen Kursen zu 9 verschiedenen modulen zwischen den Jahren 2011 und 2018 ausgewählt.
 Alle Module kommen aus dem Selben Fachbereich und dem selben Dozenten um eine homogene Maßen an Daten anzusammeln.
 Insgesamt konnten so Kursdaten von 690 Studenten (410 waren Indivuell, rest selber Student) gesammelt werden, wobei 83 davon, den Kurs frühzeitig verlassen haben.
@@ -115,3 +187,4 @@ Um die Modelle zu verbessern könnten feinere Zugriffsdaten gesammelt werden, so
 Moodle Data kann benutzt werden um vorherzusagen, wie gut ein Student besteht un ob dieser Besteht. Um dies jedoch Praktisch zu benutzen, währe ein Frühwarnsystem gut, Moodle daten reichen dazu nicht ausreichen aus. 
 Die getestetn Modelle sollten daher mit mehr Daten, genaueren Zugriffsdaten und Aufgaben ergebnisse miteinbezogen werden. 
 Des weitren waren alle Zugriffsdaten nur von Kursen die von einem Doztenten geleitet wurden. Daher ist das ergebnis nicht gut Generalisierbar
+\end{comment}

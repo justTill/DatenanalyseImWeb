@@ -267,8 +267,8 @@ INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/whitepaper.tex
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/whitepaper.tex
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.tex
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.tex
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/aied.tex
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/aied.tex
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -278,8 +278,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/aied.tex
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/aied.tex
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.tex
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.tex
 OUTPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.tex
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.tex
@@ -310,13 +310,10 @@ OUTPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/ausarbeitung.run.xml
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb

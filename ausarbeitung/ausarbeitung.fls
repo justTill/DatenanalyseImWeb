@@ -267,6 +267,9 @@ INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/misc/acronyms.tex
 OUTPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/einleitung.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/einleitung.tex
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/einleitung.tex
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/figures/entwicklung_historie_ki.png
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/figures/entwicklung_historie_ki.png
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/figures/entwicklung_historie_ki.png
 OUTPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ergebnisse.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ergebnisse.tex
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/ergebnisse.tex

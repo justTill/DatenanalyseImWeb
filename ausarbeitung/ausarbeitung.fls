@@ -137,12 +137,12 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/blx-natbib.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/blx-natbib.def
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.cfg
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.cfg
 OUTPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/misc/config.aux
@@ -269,8 +269,6 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.tex
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/moodlePrediction.tex
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/aied.tex
-INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/aied.tex
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -280,6 +278,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/aied.tex
+INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/aied.tex
 OUTPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.aux
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.tex
 INPUT /Users/tillpilarczyk/HSD/Master/daw/ausarbeitung/content/fazit.tex
@@ -312,6 +312,7 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb

@@ -1,52 +1,48 @@
-Rory Quin und Professor Geraldine Gray sind an der \glqq Technological University Dublin\grqq{} im Fachbereich für \glqq Informatics and Engineering PhD \grqq{} angestelt.
-Sie haben in dem Paper \glqq Prediction of student academic performance using Moodle data from a Further Education setting\grqq{} welches im Irish Journal of Technology Enhanced Learning im jahre 2020 veröffentlich wurde und nach researchgate 14 mal Zitiert worden ist, untersucht ob es Möglich ist anhand von Zugriffsdaten des Lernmanagementsystems Moodle die an einer Hochschule gesammelt wurden,
-vorhersagen über die Zukünftigen Laufbahn eines Studentens innerhalb eines Kurses zu treffen. \footnote{\url{https://www.researchgate.net/publication/340908692_Prediction_of_student_academic_performance_using_Moodle_data_from_a_Further_Education_setting}, zuletzt aufgerufen am 10.07.2022} Diese Art von Forschung wurde schon von einigen anderen Professoren und Wissenschaftlern untersucht, jedoch immer nur an Universitäten und nie mit Daten von einer Hochschule. \cite[S. 5]{Quinn.2020}
+Rory Quin und Professor Geraldine Gray sind an der \glqq Technological University Dublin\grqq{} im Fachbereich für \glqq Informatics and Engineering PhD \grqq{} angestellt.
+Eines ihrer Paper \glqq Prediction of student academic performance using Moodle data from a Further Education setting\grqq{}, wurde im Jahre 2020 im Irish Journal of Technology Enhanced Learning  veröffentlicht und nach der Plattform Researchgate 14 Mal zitiert.  \footnote{\url{https://www.researchgate.net/publication/340908692_Prediction_of_student_academic_performance_using_Moodle_data_from_a_Further_Education_setting}, zuletzt aufgerufen am 10.07.2022}
+In dem Paper haben sie untersucht, ob es anhand von Zugriffsdaten des \ac{LMS} Moodle, die an einer Hochschule gesammelt wurden, möglich ist, Vorhersagen über die zukünftige Laufbahn eines Studentens innerhalb eines Kurses zu treffen. Diese Art von Forschung wurde schon von einigen anderen Professoren und Wissenschaftlern untersucht, jedoch immer nur an Universitäten und nie mit Daten von einer Hochschule. \cite[S. 5]{Quinn.2020}
 \\ \noindent
-Rory Quin und Professor Geraldine Gray versuchen in dem Paper die Frage, ob es möglich ist, mit Zugriffsdaten von Moodle, die während der dauer eines Kurses gesammelt werden vorherzusagen, wie gut ein Student in dem Kurs abschneidet und damit auch ob dieser den Kurs besteht oder durchfällt zu beantworten. 
-Ebenso versuchen Sie die Frage, ob es möglich ist, mit den selben Daten jedoch nur von den ersten sechs bzw. zehn Wochen vorherzusagen ob ein Student den Kurs bestehen oder durchfallen wird. \cite[S. 5]{Quinn.2020}
-Dies hat den Grund, dass Dozenten Präventionen einleiten können für Studenten die Gefahr laufen den Kurs nicht zu bestehen. Dies würde nicht nur den Studenten helfen sondern auch der Hochschule und dem Dozenten, denn diese würde langfristig den Zeit und Geld sparen. \cite[S. 15]{Quinn.2020}
+Rory Quin und Professor Geraldine Gray versuchen in dem Paper die Frage zu beantworten, ob es möglich ist, mit Zugriffsdaten von Moodle während der Dauer eines Kurses, vorherzusagen, wie gut ein Student in dem Kurs abschneidet und damit auch, ob dieser den Kurs besteht oder durchfällt.
+Ebenso versuchen Sie die Frage zu klären, ob mit denselben Daten, jedoch nur von den ersten sechs bzw. zehn Wochen vorherzusagen, ob ein Student den Kurs bestehen oder durchfallen wird. \cite[S. 5]{Quinn.2020}
+Dies hat den Grund, dass Dozenten Präventionen für Studenten einleiten können, die Gefahr laufen den Kurs nicht zu bestehen. Dies würde nicht nur den Studenten helfen, sondern auch der Hochschule und dem Dozenten, denn diese würden langfristig Zeit und Geld sparen. \cite[S. 15]{Quinn.2020}
 
 \subsection{Vorgehen}
 Um die Fragen zu beantworten werden die Daten von insgesamt 29 Kursen von 9 verschiedenen Modulen im selben Fachbereich und unter der Leitung eines Dozentens gesammelt.
-Die Kurse fanden zwischen den Jahren 2011 und 2018 statt. Die Kurse hatten unterschiedlich lange Laufzeiten, der kürzetes Kurs hat eine Länge von 11 Wochen und der längste 33 Wochen.
-Insgesamt konnten so Daten von 690 Kursteilnehmern gesammelt werden. Die 690 Kursteilnehmer setzten sich aus insgesamt 410 Studierenden zusammen. \cite[S. 6]{Quinn.2020}
-\\
+Die Kurse fanden zwischen den Jahren 2011 und 2018 statt. Die Kurse hatten unterschiedlich lange Laufzeiten. Der kürzeste Kurs hat eine Laufzeit von 11 Wochen und der längste ging 33 Wochen.
+Insgesamt konnten Daten von 690 Kursteilnehmern gesammelt werden. Die 690 Kursteilnehmer setzten sich aus insgesamt 410 Studierenden zusammen. \cite[S. 6]{Quinn.2020}
+\\ \\
 \noindent
-Die erste Klassifizierungsaufgabe besteht darin den Notenbereich der Studierenden hervorzusagen und damit ob diese den Kurs bestehen oder durchfallen.
+Die erste Klassifizierungsaufgabe besteht darin den Notenbereich der Studierenden hervorzusagen und damit, ob diese den Kurs bestehen oder durchfallen.
 Es gibt die Klassen, Early Exit (Abbruch), Fail (durchgefallen), Pass (bestanden mit 50\% bis 64\%), Merit (bestanden mit 65\% bis 79\%), Distinction (bestanden mit 80\% bis 100\%). \cite[S. 6f]{Quinn.2020}
-\\ \noindent
+\\ \\ \noindent
 Um die zweite Frage zu beantworten werden die ersten beiden Klassen Early Exit und Fail, sowie die anderen drei Klassen zusammengefasst.
 Es gibt jetzt nur noch die Klassen bestanden und durchgefallen. \cite[S. 6]{Quinn.2020}
-\\
+\\ \\
 \noindent
-Um die Fragen zu beantworten werden Zugriffsdaten verwendet. Es werden z. B. die Anzahl an Log einträgen, die Anzahl an Tagen an denen sich die Studieren eingeloggt haben und die Anzahl wie oft sich die Studierenden die Aufgabe angeschaut haben genutzt um die Vorhersage zu treffen.
-Diese sind jedoch nur einige der Zugriffsdaten. Insgesamt wurden 21 solcher Daten verwendet. \cite[S. 7f]{Quinn.2020}
-\\
+Um die Fragen zu beantworten werden Zugriffsdaten verwendet. Es werden z. B. die Anzahl an Logeinträgen, die Anzahl an Tagen, an denen sich die Studierenden eingeloggt haben und die Anzahl, wie oft sich die Studierenden die Aufgabe angeschaut haben, genutzt, um die Vorhersage zu treffen. Insgesamt wurden 21 Zugriffsdaten verwendet. \cite[S. 7f]{Quinn.2020}
+\\ \\
 \noindent
-\\
-\noindent
-Es werden vier verschiedene Algorithmen getestet, um die bestmögliche Vorhersagen zu treffen. Der Random Forest, Gradient Boosting, k Nearest
-Neighbours und Linear Discriminant Analysis. Es werden die Algorihmen getestet, da diese in anderen Forschungen bereits gute Ergebnisse erzielt.
-Jeder der Algrotihmen wird mit 70\% der Daten trainiert. Die restlichen 30\% werden benutzt um die Genauigkeit zu überprüfen.
+Es werden vier verschiedene Algorithmen getestet, um die bestmöglichen Vorhersagen zu treffen: der Random Forest, Gradient Boosting, k Nearest
+Neighbours und Linear Discriminant Analysis. Es werden diese Algorihmen getestet, da sie in anderen Forschungen bereits gute Ergebnisse erzielt.
+Jeder der Algrotihmen wird mit 70\% der Daten trainiert. Die restlichen 30\% werden benutzt, um die Genauigkeit zu überprüfen.
 Die Genauigkeit wird außerdem mit der\glqq no-information rate\grqq{} verglichen. Diese gibt die Genauigkeit an, wenn immer die am häufigsten vorkommende Klasse vorhergesagt wird. \cite[S. 8f]{Quinn.2020}
 
 \subsection{Ergebnis}
-Das Trainieren und Testen mit allen Daten ergibt, dass alle Algorithmen einen ähnliche Genauigkeit haben, wenn es darum geht den Notenbreich vorherzusagen.
+Das Trainieren und Testen mit allen Daten ergibt, dass alle Algorithmen einen ähnliche Genauigkeit haben, wenn es um die Vorhersage des Notenbreichs geht.
 Sie unterscheiden sich nur in wenigen Prozentpunkten. Der Random Forest Algorihmus trifft mit einer Genauigkeit von 60,5\% die besten vorhersagen.
-Wenn es nur darum geht vorherzusagen, ob ein Student den Kurs besteht oder durchfällt hat der Random Forest Algorithmus eine Genauigkeit von 92.2\% erreicht. 
-Ach hier schneidet der Algrithmus am besten ab. Mit den 92,2\% ist der Algorihmus Signifikant besser als die \glqq no information rate\grqq{}. 
-Diese liegt aufgrund der Tatsache, das es mehr Studierende gab die Kurse bestanden haben, als die die nicht bestanden haben bei 73.5\%. 
-Der Random Forest Algorihmus kann insgesamt 121 von 152 Studierende die den Kurs bestanden haben richtig hervorsagen und 42 von 54 Studierende die den Kurs nicht bestanden haben. \cite[S. 9f]{Quinn.2020}
+Wenn es nur darum geht vorherzusagen, ob ein Student den Kurs besteht oder durchfällt, hat der Random Forest Algorithmus eine Genauigkeit von 92,2\% erreicht.
+Auch hier schneidet der Algrithmus am besten ab. Mit den 92,2\% ist der Algorihmus signifikant besser als die \glqq no information rate\grqq{}.
+Diese liegt an der Tatsache, dass es mehr Studierende gab, die Kurse bestanden haben, als die die nicht bestanden haben bei 73.5\%.
+Der Random Forest Algorihmus kann insgesamt 121 von 152 Studierende, die den Kurs bestanden haben, richtig hervorsagen und 42 von 54 Studierenden, die den Kurs nicht bestanden haben. \cite[S. 9f]{Quinn.2020}
 \\ \\ \noindent
-Das Trainieren und Testen mit Daten von sechs Wochen ergibt, dass kein Algorihmus bessere voraussagen treffen kann, als wenn man die \glqq no information rate\grqq{} benutzt,
+Das Trainieren und Testen mit Daten von sechs Wochen ergibt, dass kein Algorihmus bessere Voraussagen treffen kann, als wenn man die \glqq no information rate\grqq{} benutzt,
 die bei 75,5\% liegt. Die unterschiedliche \glqq no information rate\grqq{}, setzt sich daraus zusammen, dass noch nicht alle Studierenden innerhalb der ersten 6 Wochen des Kurses Moodle benutzen. \cite[S. 10f]{Quinn.2020}
 \\ \noindent \\ \noindent
-Wurden hingegen die Daten der ersten zehn Wochen benutzt kann eine Signifikante verbesserung gegenüber der \glqq no information rate\grqq{} erreicht werden. 
-Auch hier schneidet der Random Forest Algorithmus am besten ab. Er erreichte eine Genauigkeit von 82.18\%, wenn es darum ging zu bestimmen ob studierende den Kurs bestehen oder nicht. 
+Wurden hingegen die Daten der ersten zehn Wochen benutzt, kann eine signifikante Verbesserung gegenüber der \glqq no information rate\grqq{} erreicht werden.
+Auch hier schneidet der Random Forest Algorithmus am besten ab. Er erreichte eine Genauigkeit von 82.18\%, wenn es darum ging zu bestimmen, ob Studierende den Kurs bestehen oder nicht.
 Die \glqq no information rate\grqq{} liegt bei 74.8\%. \cite[S. 10f]{Quinn.2020}
 \\ \noindent \newline \noindent
-\\ \noindent \newline \noindent
-Am meisten Einfluss auf die Vorhersage, wenn alle Daten oder die der ersten 10 Wochen benutzt wurden, hatte die Anzahl an Tagen an denen sich die Studierenden in den Kurs eingeloggt haben. \cite[S. 15]{Quinn.2020}
+Am meisten Einfluss auf die Vorhersage hatte die Anzahl an Tagen, an denen sich die Studierenden in den Kurs eingeloggt haben, wenn alle Daten oder die der ersten 10 Wochen benutzt wurden. \cite[S. 15]{Quinn.2020}
 
 \subsection{Fazit}
 Die Testergebnisse zeigen, dass es möglich ist mihilfe von Zugriffsdaten die von Moodle im laufe eines Kurses gesammelt werden Signifikant bessere vorhersagen über die Noten der Studierenden zu treffen als mit der \glqq no-information rate\grqq{}.
@@ -55,7 +51,7 @@ Der Random Forest Algorithmus kann 97\% der Studierenden die den Kurs bestehen u
 \\ \noindent \\ \noindent
 Es reicht jedoch nicht aus am Ende eines Kurses voherzusagen zu können, ob ein Studierender den Kurs besteht oder nicht.
 Ein frühzeitiger Hinweis welche Studierenden möglicherweise nicht bestehen, wäre für die Lehrenden Hilfreich, da sie so gezielt Hilfe leisten können.
-Das Testergebnis zeigt, dass es nicht möglich ist mit Daten von sechs Wochen festzustellen welche Studierenden möglicherweise durchfallen. 
+Das Testergebnis zeigt, dass es nicht möglich ist mit Daten von sechs Wochen festzustellen welche Studierenden möglicherweise durchfallen.
 Mit den gesammelten Daten von zehn Wochen kann jedoch eine Signifikant bessere Vorhersage getroffen werden als mit der \glqq no-information rate\grqq{}.
 Trotzdem können nur weniger als die Häflte der Studierenden ermittelt werden, die Durchfallen.
 Dies deutet darauf hin, dass die Zugriffsdaten von Moodle hilfreich für ein Frühwarnsystem sein können.
